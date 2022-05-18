@@ -1,8 +1,5 @@
-altair
-vega-datasets
 pandas
-google-api-python-client
-google-auth
-google-auth-httplib2
+google_api_python_client
 protobuf
+streamlit==1.4.0
 click==8

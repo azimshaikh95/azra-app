@@ -1,7 +1,7 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-commenting/main)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-bug-report/main)
 
-# 💬 Commenting app
+# 🐞 Bug Report app
 
-An app to show how you can easily empower viewers to comment and collaborate on your app using a commenting component. The comments are hosted on a Google Sheet.
+An app to show how Streamlit can easily collect and write data from/to a database (here a simple Google Sheet)
 
-<img width="417" alt="screenshot" src="https://user-images.githubusercontent.com/7164864/141757370-563fa505-4647-49e3-b861-de008207a160.png">
+<img width="583" alt="screenshot" src="https://user-images.githubusercontent.com/7164864/141757795-45576b0b-7322-4ef1-b2cc-32a8f108eb7f.png">
