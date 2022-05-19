@@ -3,3 +3,4 @@ google_api_python_client
 protobuf
 streamlit==1.4.0
 click==8
+gsheetsdb==0.1.13
