@@ -1,4 +1,4 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-bug-report/main)
+[![Streamlit App](https://share.streamlit.io/azimshaikh95/azra-app/azra_app.py)
 
 # 🐞 Bug Report app
 
