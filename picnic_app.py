@@ -67,9 +67,9 @@ def add_row_to_gsheet(gsheet_connector, row) -> None:
     ).execute()
 
 
-st.set_page_config(page_title="Youngsters of Markaz", page_icon="🐞", layout="centered")
+st.set_page_config(page_title="Youngsters of Markaz", page_icon="🌴", layout="centered")
 
-st.title("🏊‍♂️ Youngsters Picnic !")
+st.title("️🌴 Youngsters Picnic ! 🌳")
 
 gsheet_connector = connect_to_gsheet()
 
