@@ -97,13 +97,14 @@ with form:
     reg_by = cols[0].selectbox(
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
     )
+    mob = cols[1].text_input("Mobile No:")
     submitted = st.form_submit_button(label="Register")
 
 
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, y_address , y_age, str(date), reg_by, comment]],
+        [[y_name, y_address , y_age, str(date), reg_by, mob, comment]],
     )
     st.success("Thanks! Your data has recorded!")
     st.balloons()
