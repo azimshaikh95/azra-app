@@ -86,13 +86,13 @@ form = st.form(key="annotation")
 with form:
     cols = st.columns((1, 1))
     y_name = cols[0].text_input("Name:")
-    bug_type = cols[1].selectbox(
+    y_address = cols[1].selectbox(
         "Address:", ["Tawakkal Villa", "Back-end", "Data related", "404"], index=2
     )
    
     cols = st.columns(2)
     date = cols[0].date_input("Date of Registration:")
-    bug_severity = cols[1].slider("Age:", 12, 30, 15)
+    y_age = cols[1].slider("Age:", 12, 30, 15)
     comment = st.text_area("Comment:")
     submitted = st.form_submit_button(label="Register")
 
@@ -100,7 +100,7 @@ with form:
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, bug_type, comment, str(date), bug_severity]],
+        [[y_name, y_address, comment, str(date), y_age]],
     )
     st.success("Thanks! Your bug was recorded.")
     st.balloons()
