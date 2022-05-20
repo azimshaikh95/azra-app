@@ -81,7 +81,7 @@ gsheet_connector = connect_to_gsheet()
     # f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
 # )
 
-form = st.form(key="annotation")
+form = st.form(key="annotation", clear_on_submit = True)
 
 with form:
     cols = st.columns((1, 1))
