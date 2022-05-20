@@ -94,7 +94,9 @@ with form:
     date = cols[0].date_input("Date of Registration:")
     y_age = cols[1].slider("Age:", 12, 30, 15)
     comment = st.text_area("Comment:")
-    reg_by = cols[0].text_input("Registered By:")
+    reg_by = cols[0].selectbox(
+        "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
+    )
     submitted = st.form_submit_button(label="Register")
 
 
