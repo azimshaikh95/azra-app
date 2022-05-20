@@ -73,13 +73,13 @@ st.title('🌴 Youngsters Picnic ! 🌳')
 
 gsheet_connector = connect_to_gsheet()
 
-# st.sidebar.write(
-    # f"This app is made for Youngsters of Markaz Picnic Program [Google Sheet]({GSHEET_URL}) to register the names of youngsters."
-# )
+st.sidebar.write(
+    f"This app is made for Youngsters of Markaz Picnic Program [Google Sheet]({GSHEET_URL}) to register the names of youngsters."
+)
 
-# st.sidebar.write(
-    # f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
-# )
+st.sidebar.write(
+    f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
+)
 
 form = st.form(key="markaz", clear_on_submit = True)
 
