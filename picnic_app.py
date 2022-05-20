@@ -96,8 +96,9 @@ with form:
     comment = st.text_area("Comment:")
     reg_by = cols[0].selectbox(
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
-    )
     mob = cols[1].text_input("Mobile No:")
+    )
+    
     submitted = st.form_submit_button(label="Register")
 
 
