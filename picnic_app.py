@@ -100,7 +100,7 @@ with form:
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, y_address, comment, str(date), y_age]],
+        [[y_name, y_address , y_age, str(date), comment]],
     )
     st.success("Thanks! Your data has recorded!")
     st.balloons()
