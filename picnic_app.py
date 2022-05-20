@@ -46,7 +46,7 @@ def get_data(gsheet_connector) -> pd.DataFrame:
     values = (
         gsheet_connector.values()
         .get(
-            spreadsheetId=SPREADSHEET_ID,
+            spreadsheetId=st.secrets["SPREADSHEET_XID"],
             range=f"{SHEET_NAME}!A:E",
         )
         .execute()
@@ -60,7 +60,7 @@ def get_data(gsheet_connector) -> pd.DataFrame:
 
 def add_row_to_gsheet(gsheet_connector, row) -> None:
     gsheet_connector.values().append(
-        spreadsheetId=SPREADSHEET_ID,
+        spreadsheetId=st.secrets["SPREADSHEET_XID"],
         range=f"{SHEET_NAME}!A:E",
         body=dict(values=row),
         valueInputOption="USER_ENTERED",
