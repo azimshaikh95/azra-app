@@ -93,11 +93,13 @@ with form:
     cols = st.columns(2)
     date = cols[0].date_input("Date of Registration:")
     y_age = cols[1].slider("Age:", 12, 30, 15)
-    comment = st.text_area("Comment:")
+    mob = cols[1].text_input("Mobile No:")
+    
     reg_by = cols[0].selectbox(
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
     )
-    mob = cols[1].text_input("Mobile No:")
+    comment = st.text_area("Comment:")
+   
     submitted = st.form_submit_button(label="Register")
 
 
