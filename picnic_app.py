@@ -132,7 +132,7 @@ def style():
     .sidebar-text{
         font-family: 'Roboto', sans-serif;
     }.stMarkdown{
-        font-family: 'Roboto', sans-serif;
+        font-family: "IBM Plex Sans", sans-serif;
     }
     .standard-text{
         font-family: 'My Font';
