@@ -99,7 +99,7 @@ with form:
     date = cols[0].date_input("Date of Registration:")
     comment = st.text_area("Comment:", height=None)
    
-    submitted = st.form_submit_button(label="Register")
+    submitted = st.form_submit_button(label="Register Now")
 
 
 if submitted:
