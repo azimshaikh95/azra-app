@@ -2,6 +2,6 @@
 
 # 🌴 Youngsters Picnic ! 🌳
 
-An app is made for Youngsters of Markaz Picnic
+An app is made for Youngsters of Markaz Picnic !
 
 

@@ -94,13 +94,14 @@ with form:
     date = cols[0].date_input("Date of Registration:")
     y_age = cols[1].slider("Age:", 12, 30, 15)
     comment = st.text_area("Comment:")
+    reg_by = cols[0].text_input("Registered By:")
     submitted = st.form_submit_button(label="Register")
 
 
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, y_address , y_age, str(date), comment]],
+        [[y_name, y_address , y_age, str(date), reg_by, comment]],
     )
     st.success("Thanks! Your data has recorded!")
     st.balloons()
