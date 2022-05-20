@@ -97,7 +97,7 @@ with form:
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
     )
     date = cols[0].date_input("Date of Registration:")
-    comment = st.text_area("Comment:")
+    comment = st.text_area("Comment:", height=25)
    
     submitted = st.form_submit_button(label="Register")
 
