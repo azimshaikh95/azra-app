@@ -74,7 +74,7 @@ st.title("️🌴 Youngsters Picnic ! 🌳")
 gsheet_connector = connect_to_gsheet()
 
 st.sidebar.write(
-    f"This app shows how a Streamlit app can interact easily with a [Google Sheet]({GSHEET_URL}) to read or store data."
+    f"This app is made for Youngsters of Markaz Picnic Program [Google Sheet]({GSHEET_URL}) to register the names of youngsters."
 )
 
 st.sidebar.write(
