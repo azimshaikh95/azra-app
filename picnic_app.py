@@ -93,9 +93,9 @@ with form:
     cols = st.columns(2)
     date = cols[0].date_input("Date of Registration:")
     y_age = cols[1].slider("Age:", 12, 30, 15)
-    mob = cols[1].text_input("Mobile No:")
+    mob = cols[0].text_input("Mobile No:")
     
-    reg_by = cols[0].selectbox(
+    reg_by = cols[1].selectbox(
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
     )
     comment = st.text_area("Comment:")
