@@ -77,17 +77,17 @@ st.sidebar.write(
     f"This app is made for Youngsters of Markaz Picnic Program [Google Sheet]({GSHEET_URL}) to register the names of youngsters."
 )
 
-st.sidebar.write(
-    f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
-)
+# st.sidebar.write(
+    # f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
+# )
 
 form = st.form(key="annotation")
 
 with form:
     cols = st.columns((1, 1))
-    author = cols[0].text_input("Report author:")
+    author = cols[0].text_input("Name:")
     bug_type = cols[1].selectbox(
-        "Bug type:", ["Front-end", "Back-end", "Data related", "404"], index=2
+        "Address:", ["Front-end", "Back-end", "Data related", "404"], index=2
     )
     comment = st.text_area("Comment:")
     cols = st.columns(2)
