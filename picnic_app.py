@@ -103,7 +103,9 @@ if submitted:
         [[y_name, y_address, comment, str(date), y_age]],
     )
     st.success("Thanks! Your data has recorded!")
+    # st.balloons()
     st.snow()
+
 
 expander = st.expander("See all records")
 with expander:
