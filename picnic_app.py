@@ -87,7 +87,7 @@ with form:
     cols = st.columns((1, 1))
     y_name = cols[0].text_input("Name:")
     y_address = cols[1].selectbox(
-        "Address:", ["Tawakkal Villa", "Zamzam Apartment", "Rahil Park / Faruk-E-Azam Lane", "Khushbu", "Lalbi Park / JK Row House", "Noor-E-Aqsa", "Jambuwala / Maah-E-Noor", "Asra / Gulab Park", "Mohsin Park", "Basti / Safeer-3", "Other"], index=2
+        "Address:", ["Tawakkal Villa / Flats", "Zamzam Apartment / Noor Enclave", "Rahil Park / Faruk-E-Azam Lane", "Khushbu", "Lalbi Park / JK Row House", "Noor-E-Aqsa", "Jambuwala / Maah-E-Noor", "Asra / Gulab Park", "Mohsin Park", "Basti / Safeer-3", "Other"], index=2
     )
    
     cols = st.columns(2)
@@ -103,7 +103,7 @@ if submitted:
         [[y_name, y_address, comment, str(date), y_age]],
     )
     st.success("Thanks! Your data has recorded!")
-    st.balloons()
+    st.snow()
 
 expander = st.expander("See all records")
 with expander:
