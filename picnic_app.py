@@ -131,6 +131,8 @@ def style():
     }
     .sidebar-text{
         font-family: 'Roboto', sans-serif;
+    }.stSidebar{
+        font-family: 'Roboto', sans-serif;
     }
     .standard-text{
         font-family: 'My Font';
