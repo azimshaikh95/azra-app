@@ -8,7 +8,7 @@ from googleapiclient.http import HttpRequest
 
 SCOPE = "https://www.googleapis.com/auth/spreadsheets"
 # SPREADSHEET_ID = "1QlPTiVvfRM82snGN6LELpNkOwVI1_Mp9J9xeJe-QoaA"
-SPREADSHEET_ID = "1SC-4sbuUVG7FEb0gz1ishGk-Uk-7N5zVu1CmgTOqesw"
+# SPREADSHEET_ID = "1SC-4sbuUVG7FEb0gz1ishGk-Uk-7N5zVu1CmgTOqesw"
 SHEET_NAME = "Database"
 # GSHEET_URL = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}"
 GSHEET_URL = "https://docs.google.com/spreadsheets/d/"+st.secrets["SPREADSHEET_ID"]
