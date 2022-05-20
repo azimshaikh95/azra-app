@@ -81,7 +81,7 @@ gsheet_connector = connect_to_gsheet()
     # f"[Read more](https://docs.streamlit.io/knowledge-base/tutorials/databases/public-gsheet) about connecting your Streamlit app to Google Sheets."
 # )
 
-form = st.form(key="annotation", clear_on_submit = True)
+form = st.form(key="markaz", clear_on_submit = True)
 
 with form:
     cols = st.columns((1, 1))
@@ -105,7 +105,7 @@ with form:
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, y_address , y_age, str(date), reg_by, mob, comment]],
+        [[y_name, y_address , mob, y_age, reg_by, str(date), comment]],
     )
     st.success("Thanks! Your data has recorded!")
     st.balloons()
