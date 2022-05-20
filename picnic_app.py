@@ -24,19 +24,19 @@ def connect_to_gsheet():
 
     # Create a new Http() object for every request
     def build_request(http, *args, **kwargs):
-        new_http = google_auth_httplib2.y_nameizedHttp(
+        new_http = google_auth_httplib2.AuthorizedHttp(
             credentials, http=httplib2.Http()
         )
         return HttpRequest(new_http, *args, **kwargs)
 
-    y_nameized_http = google_auth_httplib2.y_nameizedHttp(
+    authorized_http = google_auth_httplib2.AuthorizedHttp(
         credentials, http=httplib2.Http()
     )
     service = build(
         "sheets",
         "v4",
         requestBuilder=build_request,
-        http=y_nameized_http,
+        http=authorized_http,
     )
     gsheet_connector = service.spreadsheets()
     return gsheet_connector
@@ -85,14 +85,14 @@ form = st.form(key="annotation")
 
 with form:
     cols = st.columns((1, 1))
-    y_name = cols[0].text_input("Name:")
-    y_address = cols[1].selectbox(
+    author = cols[0].text_input("Name:")
+    bug_type = cols[1].selectbox(
         "Address:", ["Tawakkal Villa", "Back-end", "Data related", "404"], index=2
     )
    
     cols = st.columns(2)
     date = cols[0].date_input("Date of Registration:")
-    y_age = cols[1].slider("Age:", 12, 30, 15)
+    bug_severity = cols[1].slider("Age:", 12, 30, 15)
     comment = st.text_area("Comment:")
     submitted = st.form_submit_button(label="Register")
 
@@ -100,9 +100,9 @@ with form:
 if submitted:
     add_row_to_gsheet(
         gsheet_connector,
-        [[y_name, y_address, comment, str(date), y_age]],
+        [[author, bug_type, comment, str(date), bug_severity]],
     )
-    st.success("Thanks! Your data has recorded.")
+    st.success("Thanks! Your bug was recorded.")
     st.balloons()
 
 expander = st.expander("See all records")
