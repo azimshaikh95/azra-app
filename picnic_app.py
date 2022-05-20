@@ -120,8 +120,11 @@ with expander:
 
 def style():
     css = """
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+        
     <style>
     @font-face {
         font-family: 'My Font';
@@ -129,12 +132,12 @@ def style():
         src: url(assets/fonts/myfont.tff) format('truetype');;
     }
     .sidebar-text{
-        font-family: 'Roboto', sans-serif;
+        font-family: 'IBM Plex Sans', sans-serif;
     }.stMarkdown{
-        font-family: "IBM Plex Sans", sans-serif;
+        font-family: 'IBM Plex Sans', sans-serif;
     }
     .standard-text{
-        font-family: 'My Font';
+        font-family: 'IBM Plex Sans', sans-serif;
     }
     </style>
     """
