@@ -111,7 +111,7 @@ if submitted:
     st.balloons()
 
 
-expander = st.expander("See all records")
+expander = st.expander("See All Records")
 with expander:
     # st.write(f"Open original [Google Sheet]({GSHEET_URL})")
     st.dataframe(get_data(gsheet_connector))
