@@ -91,8 +91,8 @@ with form:
     )
    
     cols = st.columns(2)
-    date = cols[0].date_input("Bug date occurrence:")
-    bug_severity = cols[1].slider("Bug severity:", 1, 5, 2)
+    date = cols[0].date_input("Date of Registration:")
+    bug_severity = cols[1].slider("Bug severity:", 12, 30, 15)
     comment = st.text_area("Comment:")
     submitted = st.form_submit_button(label="Submit")
 
