@@ -116,3 +116,25 @@ expander = st.expander("See All Records")
 with expander:
     # st.write(f"Open original [Google Sheet]({GSHEET_URL})")
     st.dataframe(get_data(gsheet_connector))
+
+
+
+def style():
+    css = """
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+    @font-face {
+        font-family: 'My Font';
+        font-style: normal;
+        src: url(assets/fonts/myfont.tff) format('truetype');;
+    }
+    .sidebar-text{
+        font-family: 'Roboto', sans-serif;
+    }
+    .standard-text{
+        font-family: 'My Font';
+    }
+    </style>
+    """
+    st.markdown(css,unsafe_allow_html=True)
