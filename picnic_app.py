@@ -91,7 +91,7 @@ with form:
     )
    
     cols = st.columns(2)
-    y_age = cols[1].slider("Age:", 12, 30, 15)
+    # y_age = cols[1].slider("Age:", 12, 30, 15)
     mob = cols[0].text_input("Mobile No:")
     reg_by = cols[1].selectbox(
         "Registered By:", ["Sarfaraz", "Hafiz Aasif", "Avez", "Qasim", "Azim", "Saddam"], index=0
