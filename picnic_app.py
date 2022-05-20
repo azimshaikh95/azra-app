@@ -70,6 +70,7 @@ def add_row_to_gsheet(gsheet_connector, row) -> None:
 st.set_page_config(page_title="Youngsters of Markaz", page_icon="🌴", layout="centered")
 
 st.title("️🌴 Youngsters Picnic ! 🌳")
+st.markdown("<h1 style='text-align: center'><b>Daily Progress Report 🌩</b></h1>", unsafe_allow_html=True)
 
 gsheet_connector = connect_to_gsheet()
 
